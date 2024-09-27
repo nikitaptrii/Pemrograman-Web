@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikita Putri Prabowo</title>
+    <title>Nikita Putri Prabowo | 140810230010</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #F7B8C6;
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+            background-color: #F7B8C6;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .container {
             max-width: 600px;
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -34,7 +46,10 @@
             text-align: center;
             color: #DE6034;
             margin-bottom: 30px;
-            font-size: 28px;
+            font-size: 30px;
+            font-family: "Concert One", sans-serif;
+            font-weight: 700;
+            font-style: normal;
         }
 
         label {
@@ -50,7 +65,6 @@
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 6px;
-            box-sizing: border-box;
             font-size: 16px;
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
@@ -117,7 +131,6 @@
             $jenis_kelamin = $_POST['jenis_kelamin'];
             $hobi = $_POST['hobi'];
 
-            // Tampilkan hasil inputan
             echo "<div class='result'>";
             echo "<h3>Data Mahasiswa yang Dimasukkan:</h3>";
             echo "<p><strong>NPM:</strong> $npm</p>";
@@ -135,16 +148,16 @@
 
         <form action="" method="POST">
             <label for="npm">NPM</label>
-            <input type="text" id="npm" name="npm" required>
+            <input type="text" id="npm" name="npm" placeholder="Masukan npm anda" required>
 
             <label for="nama">Nama</label>
-            <input type="text" id="nama" name="nama" required>
+            <input type="text" id="nama" name="nama" placeholder="Masukan nama anda" required>
 
             <label for="alamat">Alamat</label>
-            <input type="text" id="alamat" name="alamat" required>
+            <input type="text" id="alamat" name="alamat" placeholder="Masukan alamat anda" required>
 
             <label for="tempat_lahir">Tempat Lahir</label>
-            <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+            <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Masukan nama kota/kabupaten" required>
 
             <label for="tanggal_lahir">Tanggal Lahir</label>
             <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
@@ -156,7 +169,7 @@
             <label class="radio-label" for="perempuan">Perempuan</label>
 
             <label for="hobi">Hobi:</label>
-            <input type="text" id="hobi" name="hobi" required>
+            <input type="text" id="hobi" name="hobi" placeholder="Masukan hobi anda" required>
 
             <input type="submit" value="Submit">
         </form>
@@ -167,4 +180,4 @@
     </div>
 
 </body>
-</html>
+</html> 
